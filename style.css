@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: #0e0204;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    position: fixed;
+}
+
+.about {
+    text-align: center;
+    padding: 20px;
+    background-color: #3a0b1d3d;
+    border-radius: 20px;
+    font-size: larger;
+}
+
+.sidebar {
+    width: 400px;
+    background-color: #0e0204;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.sidebar ul {
+    width: 15px;
+    border-radius: 10px;
+    list-style: none;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3a0b1d;
+}
+
+.sidebar li a {
+    width: 100px;
+    margin-top: 30px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar li .point {
+    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #f12574;
+    transition: 0.3s;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.sidebar a p {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.sidebar a:hover .point {
+    margin-top: 0px;
+    width: 25px;
+    height: 25px;
+    opacity: 1;
+}
+
+.sidebar a:hover p {
+    opacity: 1;
+}
+
+.articles {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.article {
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #3a0b1d3d;
+    border-radius: 20px;
+}
+
+.article h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #f12574;
+}
+
+.article p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #6e5466;
+}
+
+.article a {
+    color: #f12574;
+}
+
+.article img {
+    width: 100%;
+    max-width: 500px;
+}
+
+article {
+    scroll-behavior: smooth;
+}
